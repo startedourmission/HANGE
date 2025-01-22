@@ -59,7 +59,7 @@ class Generator(nn.Module):
         )
         self.up2 = nn.Sequential(
             nn.ConvTranspose2d(128, 64, 3, stride=2, padding=1, output_padding=1),
-            nn.InstanceNorm2d(64),
+            nn.InstanceNorm2d(64),e
             nn.ReLU(True)
         )
 
